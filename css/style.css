@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100&family=Ubuntu+Condensed&display=swap');
 
 * {
-    padding: 10px;
+    padding: 0px;
     margin: 10px;
     box-sizing: border-box;
+    font-family: 'kalnia';
+    text-decoration: none;
 }
 
 body {
-    font-family: 'Kalnia', 'cursive';
+    font-family: 'cursive';
 }
 
 .padre {
@@ -25,30 +27,80 @@ body {
 }
 
 .menu {
-    background: linear-gradient(to right, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195));
+    background: linear-gradient(to right, rgba(199, 210, 254, .4), rgba(254, 202, 202, .4), rgba(254, 249, 195, .4));
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     height: 100px;
+    border-bottom: 1px solid #fff8;
 }
 
 .logo {
-    background: #48e;
     flex: 1 1 auto;
-
-    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
-.nav {
-    background: #27a;
-    flex: 3 3 auto;
+.logo a {
+    color: #ffff;
+    font-size: 30px;
+    display: flex;
+}
 
+.logo strong:hover {
+    text-shadow: 1px 1px rgb(100, 116, 139), 1px 1px rgb(100, 116, 139);
+    border-radius: 5px;
+    color: #343434;
+    font-size: 32px;
+    transition: font-size .5s;
+}
+
+
+
+.nav {
+
+    flex: 2 2 auto;
+    display: flex;
+
+}
+
+.nav a {
+    display: flex;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0 10;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    align-items: center;
+    font-family: 'Ubuntu Condensed';
+}
+
+.nav a:hover {
+    background: rgba(100, 116, 139, .2);
+    text-shadow: 0 0 30px rgb(100, 116, 139);
+    border-radius: 5px;
+    color: #343434;
+    font-size: 15px;
+    transition: font-size .5s;
 }
 
 .social {
-    background: #62a;
+    position: absolute;
+    left: 79vw;
     flex: 1 1 auto;
+    display: flex;
+}
 
+.social a {
+    padding: 0 3px;
+    color: #000;
+    font-size: 18px;
+}
+
+.social a:hover {
+    font-size: 27px;
+    color: #666;
+    transition: font-size .4s;
 }
 
 .texto_principal {
