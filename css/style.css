@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@700&display=swap');
+
+* {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kalnia', 'cursive';
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background-image: url('../img/header-tienda.jpg');
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background: linear-gradient(to right, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195));
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100px;
+}
+
+.logo {
+    background: #48e;
+    flex: 1 1 auto;
+
+    padding: 0;
+}
+
+.nav {
+    background: #27a;
+    flex: 3 3 auto;
+
+}
+
+.social {
+    background: #62a;
+    flex: 1 1 auto;
+
+}
+
+.texto_principal {
+    background: #85c;
+}
+
+h1 {
+    background: #35c;
+}
+
+
+.section {
+    background: #000;
+    display: flex;
+}
+
+.articulos {
+    background: linear-gradient(to right, rgb(249, 168, 212), rgb(216, 180, 254), rgb(129, 140, 248));
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.article {
+    background: #86a;
+    flex: 1 1 40%;
+}
+
+.navegacion {
+    background: #676;
+    flex: 1 1 100%;
+}
+
+.aside {
+    background: linear-gradient(to right, rgb(254, 202, 202), rgb(252, 165, 165), rgb(254, 240, 138));
+    flex: 1 1 auto;
+}
+
+.publicidad {
+    background: #49d;
+
+}
+
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.pie {
+    background: #24e;
+    width: 20rem;
+}
+
+@media all and (max-width:800px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:600px) {
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width:400px) {
+    .aside {
+        flex-direction: column;
+    }
+}
