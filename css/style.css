@@ -50,7 +50,7 @@ body {
 }
 
 .logo a {
-    color: #ffff;
+    color: #000;
     font-size: 30px;
     display: flex;
 }
@@ -58,7 +58,7 @@ body {
 .logo strong:hover {
     text-shadow: 1px 1px rgb(100, 116, 139), 1px 1px rgb(100, 116, 139);
     border-radius: 5px;
-    color: #343434;
+    color: #c06565;
     font-size: 32px;
     transition: font-size .5s;
 }
