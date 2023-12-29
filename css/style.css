@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100&family=Montserrat+Alternates:wght@500&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@800&display=swap');
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'kalnia';
 }
 
 a {
@@ -41,24 +41,30 @@ body {
     align-items: center;
     height: 100px;
     border-bottom: 1px solid #fff8;
+
 }
 
 .logo {
     flex: 1 1 auto;
     display: flex;
     align-items: center;
+    order: 2;
+    text-align: center;
 }
 
 .logo a {
-    color: #000;
+    color: #1d0b55;
     font-size: 30px;
     display: flex;
+    font-family: 'Source Code Pro';
 }
 
-.logo strong:hover {
-    text-shadow: 1px 1px rgb(100, 116, 139), 1px 1px rgb(100, 116, 139);
+
+
+.logo a:hover {
+    background: rgb(204, 206, 209);
     border-radius: 5px;
-    color: #c06565;
+    color: #512f88;
     font-size: 32px;
     transition: font-size .5s;
 }
@@ -69,7 +75,7 @@ body {
 
     flex: 2 2 auto;
     display: flex;
-
+    order: 1;
 }
 
 .nav a {
@@ -98,6 +104,7 @@ body {
     left: 79vw; */
     flex: 1 1 auto;
     display: flex;
+    order: 3;
 }
 
 .social a {
@@ -178,6 +185,7 @@ h3 {
 }
 
 h2 {
+    font-family: 'kalnia';
     font-size: 30px;
     padding: 0 0 10px 0;
     /* color: #fff; */
