@@ -29,7 +29,7 @@ class propulsor extends cohetes {
 informe=()=>{
     const parrafo = document.createElement('i');
     parrafo.innerHTML=this.llamar_p;
-    contenedor_text2.appendChild(parrafo);
+    contenedor_text_2.appendChild(parrafo);
 }
 inform=()=> {
     const parrafo = document.createElement('i');
